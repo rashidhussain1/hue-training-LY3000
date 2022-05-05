@@ -28,3 +28,4 @@ class Issue(models.Model):
     issueDescription = models.CharField(max_length=300)
     class Meta:
         db_table = "issue"
+        
