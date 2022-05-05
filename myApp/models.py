@@ -27,5 +27,4 @@ class Issue(models.Model):
     issueStatus = models.IntegerField()
     issueDescription = models.CharField(max_length=300)
     class Meta:
-        db_table = "issue"
-        
+        db_table = "issue" 
