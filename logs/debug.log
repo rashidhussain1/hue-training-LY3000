@@ -1,0 +1,12 @@
+WARNING Unauthorized: /user/
+WARNING "GET /user/ HTTP/1.1" 401 183
+WARNING Method Not Allowed: /api/token/
+WARNING "GET /api/token/ HTTP/1.1" 405 40
+INFO "POST /api/token/ HTTP/1.1" 200 483
+INFO "GET /user/ HTTP/1.1" 200 375
+INFO "GET /issue/ HTTP/1.1" 200 163
+INFO C:\Users\rashi\Desktop\LY3000\LY3000\settings.py changed, reloading.
+INFO 2022-05-05 20:32:00,840 autoreload 14340 16872 Watching for file changes with StatReloader
+INFO 2022-05-05 20:32:10,684 basehttp 14340 6416 "GET /issue/ HTTP/1.1" 200 163
+INFO 2022-05-05 20:35:53,411 autoreload 14340 16872 C:\Users\rashi\Desktop\LY3000\myApp\models.py changed, reloading.
+INFO 2022-05-05 20:35:55,535 autoreload 13192 12368 Watching for file changes with StatReloader

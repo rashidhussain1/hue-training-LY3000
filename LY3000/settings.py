@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -145,4 +146,28 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
     'AUTH_HEADER_TYPES': ('Bearer',),
+}
+
+LOGGING={
+    'version':1,
+    'loggers':{
+        'django':{
+            'handlers':['file'],
+            'level':'DEBUG'
+        }
+    },
+    'handlers':{
+        'file':{
+            'level':'INFO',
+            'class':'logging.FileHandler',
+            'filename':'./logs/debug.log',
+            'formatter':'simple'
+        }
+    },
+    'formatters':{
+        'simple':{
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style':'{',
+        }
+    }
 }
